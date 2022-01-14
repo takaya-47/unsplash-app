@@ -1,0 +1,57 @@
+$color1: #2c6e49;
+$color2: #4c956c;
+$color3: #fefee3;
+$color4: #ffc9b9;
+$color5: #d68c45;
+
+body {
+  background-color: $color3;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    margin: 5px 0;
+  }
+  .form_input {
+    width: 400px;
+    border: $color5 solid 2px;
+    margin: 5px 0;
+  }
+  .form_submit {
+    border: $color5 solid 2px;
+    border-radius: 4px;
+    padding: 4px;
+    letter-spacing: 2px;
+    background-color: $color5;
+    margin: 5px 0;
+    color: $color1;
+  }
+}
+
+h2 {
+  color: $color2;
+  text-align: center;
+  margin: 25px 0 5px 0;
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 25px;
+  .result_item {
+    width: auto;
+    height: 180px;
+  }
+}
+
+.select {
+  text-align: center;
+  .select_item {
+    width: auto;
+    height: 500px;
+  }
+}
