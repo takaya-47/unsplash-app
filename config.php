@@ -9,8 +9,8 @@ use Unsplash\HttpClient;
 function init(): void
 {
   HttpClient::init([
-    'applicationId'  => $_ENV['UNSPLASH_ACCESS_KEY'],
-    'secret'  => $_ENV['UNSPLASH_SECRET_KEY'],
+    'applicationId'  => getenv('UNSPLASH_ACCESS_KEY'),
+    'secret'  => getenv('UNSPLASH_SECRET_KEY'),
     'callbackUrl'  => 'https://localhost:8080',
     'utmSource' => 'ChooseBackground'
   ]);
