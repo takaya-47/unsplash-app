@@ -1,6 +1,5 @@
 <?php
 require_once('vendor/autoload.php');
-require_once('./config.php');
 require_once("./logic.php");
 
 // index.phpの検索フォームで送信された検索文字列を受け取る

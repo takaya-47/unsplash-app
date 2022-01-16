@@ -1,4 +1,5 @@
 <?php
+// マスターには表示されないはず
 use Unsplash\HttpClient;
 
 /**
@@ -11,6 +12,6 @@ function init(): void
     'applicationId'  => $_ENV['UNSPLASH_ACCESS_KEY'],
     'secret'  => $_ENV['UNSPLASH_SECRET_KEY'],
     'callbackUrl'  => 'https://localhost:8080',
-    'utmSource' => 'beautifulPicituresApp'
+    'utmSource' => 'ChooseBackground'
   ]);
 }
