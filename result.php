@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $search = $_POST["search"];
 }
 // 受け取った文字列で検索メソッドを実行し、結果の配列を受け取る
-$result_array = search_photo($search);
+$page_result = search_photo($search);
 
 ?>
 
@@ -29,9 +29,8 @@ $result_array = search_photo($search);
   <div>
     <h2>検索結果</h2>
     <div class="result">
-      <? foreach ($result_array as $url) { ?>
-        <?= var_dump($url); ?>
-        <!-- <img src="$url" alt="検索結果" class="result_item" /> -->
+      <? foreach ($page_result as $result) { ?>
+        <img src="<?= $result['urls']['thumb'] ?>" alt="検索結果" class="result_item" />
       <? } ?>
     </div>
   </div>
