@@ -22,6 +22,11 @@ $page_result = search_photo($search);
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- リセットCSSを適用 -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <!-- コンパイル済みのSassを適用 -->
+  <link rel="stylesheet" href="./style.css" />
   <title>検索結果</title>
 </head>
 
