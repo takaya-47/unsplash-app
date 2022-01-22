@@ -41,10 +41,16 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 25px;
-  .result_item {
-    width: auto;
-    height: 180px;
+  width: 90%;
+  margin: 0 auto;
+  .img-box {
+    width: calc(100% / 3);
+    height: 288px;
+    padding-bottom: 20px;
+    .img-box__result-img {
+      width: auto;
+      height: 100%;
+    }
   }
 }
 
