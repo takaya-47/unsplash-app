@@ -34,8 +34,14 @@ $page_result = search_photo($search);
   <div>
     <h2>検索結果</h2>
     <div class="result">
-      <? foreach ($page_result as $result) { ?>
-        <img src="<?= $result['urls']['thumb'] ?>" alt="検索結果" class="result_item" />
+      <? if (empty($page_result)) { ?>
+        <p>検索結果はありません</p>
+      <? } else { ?>
+        <? foreach ($page_result as $result) { ?>
+          <div class="img-box">
+            <img src="<?= $result['urls']['regular'] ?>" alt="検索結果" class="img-box__result-img" />
+          </div>
+        <? } ?>
       <? } ?>
     </div>
   </div>
