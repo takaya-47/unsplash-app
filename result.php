@@ -12,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 // 受け取った文字列で検索メソッドを実行し、結果の配列を受け取る
 $result_list = search_photos($search);
-
 ?>
 
 <!DOCTYPE html>

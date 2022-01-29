@@ -14,11 +14,13 @@ const REQUEST_LIMIT_PER_HOUR = 3; // デモモードの場合、実際は50だ�
  */
 function search_photos($search): array
 {
+  // 検索ワードで検索メソッド実行
   $page_result = Search::photos($search, PAGE_NUMBER, PER_PAGE, ORIENTATION, null, null);
   $total_items = $page_result->getTotal();
   $total_pages = $page_result->getTotalPages();
+
   // 検索結果が無ければその時点で結果を返す
-  if ( ! $total_items) {
+  if (!$total_items) {
     return [];
   }
 
@@ -27,7 +29,7 @@ function search_photos($search): array
     return $page_result->getResults();
   }
 
-  // 検索結果ページ数が２ページ以上の場合、ループ処理ですべてのページに対して検索メソッドを実行する
+  // 検索結果ページ数が２ページ以上の場合、すべてのページの検索結果を取得して返却
   if ($total_pages > PAGE_NUMBER) {
     // 最初の検索結果を検索結果に詰める
     $result_list = $page_result->getResults();
