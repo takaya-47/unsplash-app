@@ -38,12 +38,14 @@ $result_list = search_photos($search);
       <? } else { ?>
         <? foreach ($result_list as $result) { ?>
           <div class="img-box">
-            <img src="<?= $result['urls']['regular'] ?>" alt="検索結果" class="img-box__result-img" >
+            <img src="<?= $result['urls']['regular'] ?>" alt="検索結果" class="img-box__result-img">
           </div>
         <? } ?>
       <? } ?>
     </div>
   </div>
+
+  <script type="text/javascript" src="./main.js"></script>
 </body>
 
 </html>
