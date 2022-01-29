@@ -40,7 +40,7 @@ h2 {
 .result {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   width: 90%;
   margin: 0 auto;
   .img-box {
