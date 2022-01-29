@@ -18,7 +18,7 @@ require_once('vendor/autoload.php');
 
 <body>
   <form action="./result.php" method="POST" class="form">
-    <h2>写真検索</h2>Ï
+    <h2>写真検索</h2>
     <p>
       <input type="text" name="search" class="form_input" placeholder="検索キーワードを入力" />
     </p>
