@@ -48,8 +48,9 @@ h2 {
     height: 288px;
     padding-bottom: 20px;
     .img-box__result-img {
-      width: auto;
+      width: 100%;
       height: 100%;
+      padding: 8px;
     }
   }
 }
