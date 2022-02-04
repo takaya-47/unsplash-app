@@ -44,6 +44,11 @@ $result_list = search_photos($search);
       <? } ?>
     </div>
   </div>
+  <div class="modal">
+    <div class="modal__content"></div>
+    <button class="modal__set">壁紙に設定</button>
+  </div>
+  </div>
 
   <script type="text/javascript" src="./main.js"></script>
 </body>
