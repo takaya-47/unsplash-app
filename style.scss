@@ -72,41 +72,44 @@ h2 {
   height: 100%;
   z-index: 10;
   display: none;
-  .modal {
-    text-align: center;
+}
+.modal {
+  z-index: 20;
+  position: fixed;
+  top: 5%;
+  left: 30%;
+  width: 40%;
+  display: none;
+  text-align: center;
+  .modal__image {
+    width: 100%;
+    height: auto;
+  }
+  .modal__button {
+    width: 100%;
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    .modal__image {
-      width: 50%;
-      height: auto;
-      margin: 20px auto 20px;
+    justify-content: space-around;
+    .modal__button__set {
+      cursor: pointer;
+      display: inline-block;
+      background-color: $color1;
+      color: $color3;
+      padding: 8px;
+      border-radius: 8px;
     }
-    .modal__button {
-      display: flex;
-      width: 35%;
-      justify-content: space-between;
-      margin: 20px auto 20px;
-      .modal__button__set {
-        cursor: pointer;
-        display: block;
-        background-color: $color1;
-        color: $color3;
-        padding: 8px;
-        border-radius: 8px;
-      }
-      .modal__button__close {
-        cursor: pointer;
-        display: block;
-        background-color: $color1;
-        color: $color3;
-        padding: 8px;
-        border-radius: 8px;
-      }
+    .modal__button__close {
+      cursor: pointer;
+      display: inline-block;
+      background-color: $color1;
+      color: $color3;
+      padding: 8px;
+      border-radius: 8px;
     }
   }
 }
 
-// モーダルを表示・非表示するためのスタイル(JSで操作)
-.toggle {
+// モーダルを表示・非表示するためのスタイル（JSで操作）
+.showModal {
   display: block;
 }

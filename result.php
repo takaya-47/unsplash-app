@@ -44,13 +44,12 @@ $result_list = search_photos($search);
       <? } ?>
     </div>
   </div>
-  <div class="mask">
-    <div class="modal">
-      <img src="" class="modal__image">
-      <div class="modal__button">
-        <button class="modal__button__set">壁紙に設定</button>
-        <button class="modal__button__close">閉じる</button>
-      </div>
+  <div class="mask"></div>
+  <div class="modal">
+    <img src="" class="modal__image">
+    <div class="modal__button">
+      <button class="modal__button__set">壁紙に設定</button>
+      <button class="modal__button__close">閉じる</button>
     </div>
   </div>
 

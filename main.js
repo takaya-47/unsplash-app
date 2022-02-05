@@ -1,9 +1,5 @@
-// 'use strict';
-// 上記は各関数ごとに関数の先頭で用いる
-
-const createModal = () => {
-  "use strict";
-
+// モーダルを表示する関数
+window.addEventListener('DOMContentLoaded', () => {
   // 検索結果の画像をすべて取得する
   const triggers = document.querySelectorAll(".img-box__result-img");
 
@@ -15,17 +11,28 @@ const createModal = () => {
       targetContent.setAttribute("src", clickedImageUrl);
 
       // モーダルウィンドウを取得してモーダルを表示する
-      const modal = document.querySelector(".mask");
-      modal.classList.add("toggle");
-    })
-  })
-}
+      const mask = document.querySelector(".mask");
+      const modal = document.querySelector(".modal");
+      mask.classList.add("showModal");
+      modal.classList.add("showModal");
+    });
+  });
+});
 
-const closeModal = () => {
-  "use strict";
-
+// 「閉じる」ボタンでモーダルを非表示にする関数
+window.addEventListener('DOMContentLoaded', () => {
   const closeButton = document.querySelector(".modal__button__close");
-}
+  closeButton.addEventListener('click', () => {
+    document.querySelector(".mask").classList.remove("showModal");
+    document.querySelector(".modal").classList.remove("showModal");
+  });
+});
 
-window.onload = createModal;
-window.onload = closeModal;
+// マスク部分をクリックしてモーダルを非表示にする関数
+window.addEventListener('DOMContentLoaded', () => {
+  const mask = document.querySelector(".mask");
+  mask.addEventListener('click', () => {
+    document.querySelector(".mask").classList.remove("showModal");
+    document.querySelector(".modal").classList.remove("showModal");
+  })
+});
