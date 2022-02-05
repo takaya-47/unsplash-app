@@ -21,18 +21,18 @@ body {
     margin: 5px 0;
   }
   .form_submit {
-    border: $color5 solid 2px;
-    border-radius: 4px;
-    padding: 4px;
+    border-radius: 8px;
+    padding: 8px;
     letter-spacing: 2px;
-    background-color: $color5;
-    margin: 5px 0;
-    color: $color1;
+    background-color: $color1;
+    margin-top: 5px;
+    color: $color3;
+    cursor: pointer;
   }
 }
 
 h2 {
-  color: $color2;
+  color: $color1;
   text-align: center;
   margin: 25px 0 5px 0;
 }
@@ -77,8 +77,8 @@ h2 {
   z-index: 20;
   position: fixed;
   top: 5%;
-  left: 26%;
-  width: 50%;
+  left: 18%;
+  width: 65%;
   display: none;
   text-align: center;
   .modal__image {
@@ -101,7 +101,7 @@ h2 {
     .modal__button__close {
       cursor: pointer;
       display: inline-block;
-      background-color: $color1;
+      background-color: $color5;
       color: $color3;
       padding: 8px;
       border-radius: 8px;

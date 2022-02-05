@@ -26,17 +26,17 @@ body {
 }
 
 .form .form_submit {
-  border: #d68c45 solid 2px;
-  border-radius: 4px;
-  padding: 4px;
+  border-radius: 8px;
+  padding: 8px;
   letter-spacing: 2px;
-  background-color: #d68c45;
-  margin: 5px 0;
-  color: #2c6e49;
+  background-color: #2c6e49;
+  margin-top: 5px;
+  color: #fefee3;
+  cursor: pointer;
 }
 
 h2 {
-  color: #4c956c;
+  color: #2c6e49;
   text-align: center;
   margin: 25px 0 5px 0;
 }
@@ -90,8 +90,8 @@ h2 {
   z-index: 20;
   position: fixed;
   top: 5%;
-  left: 26%;
-  width: 50%;
+  left: 18%;
+  width: 65%;
   display: none;
   text-align: center;
 }
@@ -123,7 +123,7 @@ h2 {
 .modal .modal__button .modal__button__close {
   cursor: pointer;
   display: inline-block;
-  background-color: #2c6e49;
+  background-color: #d68c45;
   color: #fefee3;
   padding: 8px;
   border-radius: 8px;
