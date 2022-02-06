@@ -27,15 +27,15 @@
     - （画像クリック時）モーダルウィンドウ
         ・選択した画像表示部位
         ・「閉じる」ボタン
-<br>
+
 2. CSSでスタイルを整える（最低限）
-<br>
+
 3. JavaScriptでモーダル作成
-<br>
+
 4. Unsplash APIに開発者登録
-    [登録ページ](https://unsplash.com/documentation#creating-a-developer-account)
-<br>
+(https://unsplash.com/documentation#creating-a-developer-account)
+
 5. Unsplash APIの公式ライブラリをcomposerでインストール
-    [インストールはここから](https://github.com/unsplash/unsplash-php)
-<br>
+(https://github.com/unsplash/unsplash-php)
+
 6. PHPで画像検索処理、表示処理
