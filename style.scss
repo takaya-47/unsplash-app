@@ -90,14 +90,6 @@ h2 {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    .modal__button__set {
-      cursor: pointer;
-      display: inline-block;
-      background-color: $color1;
-      color: $color3;
-      padding: 8px;
-      border-radius: 8px;
-    }
     .modal__button__close {
       cursor: pointer;
       display: inline-block;

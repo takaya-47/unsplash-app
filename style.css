@@ -111,15 +111,6 @@ h2 {
       justify-content: space-around;
 }
 
-.modal .modal__button .modal__button__set {
-  cursor: pointer;
-  display: inline-block;
-  background-color: #2c6e49;
-  color: #fefee3;
-  padding: 8px;
-  border-radius: 8px;
-}
-
 .modal .modal__button .modal__button__close {
   cursor: pointer;
   display: inline-block;
